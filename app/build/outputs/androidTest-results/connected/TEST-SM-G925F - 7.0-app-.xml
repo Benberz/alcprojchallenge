@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="google.scholar.myjournal.ExampleInstrumentedTest" tests="4" failures="1" errors="0" skipped="0" time="48.039" timestamp="2018-07-01T12:01:31" hostname="localhost">
+  <properties>
+    <property name="device" value="SM-G925F - 7.0" />
+    <property name="flavor" value="" />
+    <property name="project" value="app" />
+  </properties>
+  <testcase name="useAppContext" classname="google.scholar.myjournal.ExampleInstrumentedTest" time="0.003" />
+  <testcase name="updateJournalEntry" classname="google.scholar.myjournal.MainActivityTest" time="34.741">
+    <failure>android.support.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError: 'with text: is "Espresso"' doesn't match the selected view.
+Expected: with text: is "Espresso"
+Got: "RecyclerView{id=2131230886, res-name=recycler_view_journals, visibility=VISIBLE, width=1376, height=2176, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams&#64;edbc501, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=32.0, child-count=0}"
+
+at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+at java.lang.Thread.getStackTrace(Thread.java:1567)
+at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:88)
+at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:51)
+at android.support.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:314)
+at android.support.test.espresso.ViewInteraction.check(ViewInteraction.java:297)
+at google.scholar.myjournal.MainActivityTest.updateJournalEntry(MainActivityTest.java:102)
+at java.lang.reflect.Method.invoke(Native Method)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:527)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at android.support.test.runner.AndroidJUnit4.run(AndroidJUnit4.java:101)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:56)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:384)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1962)
+Caused by: junit.framework.AssertionFailedError: 'with text: is "Espresso"' doesn't match the selected view.
+Expected: with text: is "Espresso"
+Got: "RecyclerView{id=2131230886, res-name=recycler_view_journals, visibility=VISIBLE, width=1376, height=2176, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams&#64;edbc501, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=32.0, child-count=0}"
+
+at android.support.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:539)
+at android.support.test.espresso.assertion.ViewAssertions$MatchesViewAssertion.check(ViewAssertions.java:103)
+at android.support.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:415)
+at android.support.test.espresso.ViewInteraction$2.call(ViewInteraction.java:279)
+at android.support.test.espresso.ViewInteraction$2.call(ViewInteraction.java:265)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at android.os.Handler.handleCallback(Handler.java:751)
+at android.os.Handler.dispatchMessage(Handler.java:95)
+at android.os.Looper.loop(Looper.java:154)
+at android.app.ActivityThread.main(ActivityThread.java:6682)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1520)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1410)
+</failure>
+  </testcase>
+  <testcase name="clickAddJournalButton_opensAddJournalUi" classname="google.scholar.myjournal.MainActivityTest" time="1.818" />
+  <testcase name="addJournalEntry" classname="google.scholar.myjournal.MainActivityTest" time="8.245" />
+</testsuite>
